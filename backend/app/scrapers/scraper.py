@@ -2,12 +2,13 @@ from app.utils.web_scraper import fetch_page, parse_html, extract_data
 
 def run_scraper():
     #url = 'https://example.com'  # Replace with the URL of the site you want to scrape
-    url = 'https://blogs.nvidia.com/blog/category/generative-ai/'  # Replace with the URL of the site you want to scrape
-    headers = {'User-Agent': 'Mozilla/5.0 (compatible; ExampleBot/1.0)'}
+    url = 'https://machinelearning.apple.com/research/introducing-apple-foundation-models'  
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'}
+
 
     # Step 1: Fetch the page
     html_content = fetch_page(url, headers=headers)
-    if not html_content:
+    if not html_content: 
         print("Failed to retrieve the web page.")
         return
 
